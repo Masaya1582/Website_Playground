@@ -1,24 +1,11 @@
-const slider = document.querySelector('.slider');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
-const slideWidth = document.querySelector('.slide').clientWidth;
+const openDrawerButton = document.getElementById('openDrawerButton');
+const closeDrawerButton = document.getElementById('closeDrawerButton');
+const drawer = document.getElementById('drawer');
 
-let currentIndex = 0;
-
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateSliderPosition();
-  }
+openDrawerButton.addEventListener('click', () => {
+  drawer.style.left = '0';
 });
 
-nextButton.addEventListener('click', () => {
-  if (currentIndex < slider.childElementCount - 1) {
-    currentIndex++;
-    updateSliderPosition();
-  }
+closeDrawerButton.addEventListener('click', () => {
+  drawer.style.left = '-250px';
 });
-
-function updateSliderPosition() {
-  slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-}
