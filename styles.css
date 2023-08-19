@@ -1,47 +1,40 @@
-/* Reset default browser styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the bento menu container */
+.bento-menu-container {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Style the bento menu list */
+.bento-menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style the bento menu item */
+.bento-menu-item {
+  text-align: center;
+  width: 300px; /* Set a fixed width for each item */
+}
+
+.bento-menu-item img {
+  width: 100%; /* Make the image take up the entire width of the container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bento-menu-item h3 {
+  margin: 10px 0;
+}
+
+.bento-menu-item p {
+  color: #777;
+}
