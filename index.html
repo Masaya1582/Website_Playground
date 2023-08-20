@@ -1,30 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ Page with Accordion</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .accordion-item-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .accordion-item-content {
+    padding: 10px;
+    display: none;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>This is a simple website created using HTML and CSS.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
-  </footer>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">What is Lorem Ipsum?</div>
+    <div class="accordion-item-content">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">Why do we use it?</div>
+    <div class="accordion-item-content">
+      Lorem Ipsum is used as placeholder text in the printing and typesetting industry when the actual text is not available.
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">Where does it come from?</div>
+    <div class="accordion-item-content">
+      Lorem Ipsum comes from the Latin words "Lorem ipsum dolor sit amet," which means "pain itself."
+    </div>
+  </div>
+</div>
+<script>
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-item-header');
+    const content = item.querySelector('.accordion-item-content');
+
+    header.addEventListener('click', () => {
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
 </body>
 </html>
