@@ -1,47 +1,34 @@
-/* Reset default browser styles */
-body, h1, h2, p {
+/* Reset some default styles */
+body, h2, .day, .day-name, .day-hours {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
+}
+
+/* Basic styling for the business hour container */
+.business-hour-container {
+    text-align: left;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Styling for day blocks */
+.day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Styling for day names */
+.day-name {
+    font-weight: bold;
+}
+
+/* Styling for day hours */
+.day-hours {
+    color: #888;
+}
