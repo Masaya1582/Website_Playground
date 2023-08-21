@@ -1,47 +1,33 @@
-/* Reset default browser styles */
-body, h1, h2, p {
+/* Reset some default styles */
+body, h2, p {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
+}
+
+/* Styling for the text container */
+.text-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Styling for text blocks */
+.text-block {
+    flex: 1;
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+/* Styling for the divider */
+.divider {
+    width: 2px;
+    height: 80px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
