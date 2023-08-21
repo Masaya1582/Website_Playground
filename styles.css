@@ -1,47 +1,59 @@
-/* Reset default browser styles */
-body, h1, h2, p {
+/* Reset some default styles */
+body, h2, label, input {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
+}
+
+/* Basic styling for the radio container */
+.radio-container {
+    text-align: left;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Styling for radio options */
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Styling for the radio input */
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+/* Styling for the custom radio button */
+.radio-option label {
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Styling for the custom radio indicator */
+.radio-option label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Styling for the custom radio indicator when selected */
+.radio-option input[type="radio"]:checked + label::before {
+    background-color: #007bff;
+}
+
+/* Styling for the custom radio indicator on hover */
+.radio-option label:hover::before {
+    background-color: #0056b3;
+}
