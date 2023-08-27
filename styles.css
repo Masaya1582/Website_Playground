@@ -1,47 +1,18 @@
-/* Reset default browser styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+/* Reset default margins and paddings */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background-color: #f3f3f3;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #3498db;
+  transition: width 0.2s ease-in-out;
+}
