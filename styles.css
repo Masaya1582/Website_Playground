@@ -1,47 +1,47 @@
-/* Reset default browser styles */
-body, h1, h2, p {
+/* Reset default styles */
+body, html {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #222;
+    color: #fff;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+#search-input {
+    padding: 8px;
     margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
+    border: 1px solid #ccc;
+}
+
+#search-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Movie details styles */
+.movie-details {
+    padding: 20px;
     text-align: center;
-    color: #777;
-  }
-  
+}
+
+/* Footer styles */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
