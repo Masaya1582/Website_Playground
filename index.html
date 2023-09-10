@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
+  <title>Food Menu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Delicious Eats</h1>
+    <nav>
+      <ul>
+        <li><a href="#starters">Starters</a></li>
+        <li><a href="#main-courses">Main Courses</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>This is a simple website created using HTML and CSS.</p>
-    </section>
-  </main>
+
+  <section id="starters" class="menu-section">
+    <h2>Starters</h2>
+    <div class="menu-item">
+      <h3>Garlic Bread</h3>
+      <p>A classic favorite with crispy, buttery garlic bread.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Caprese Salad</h3>
+      <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>
+    </div>
+  </section>
+
+  <section id="main-courses" class="menu-section">
+    <h2>Main Courses</h2>
+    <div class="menu-item">
+      <h3>Spaghetti Carbonara</h3>
+      <p>Spaghetti pasta with creamy egg and pancetta sauce.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Grilled Salmon</h3>
+      <p>Grilled salmon fillet served with lemon herb butter.</p>
+    </div>
+  </section>
+
+  <section id="desserts" class="menu-section">
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <h3>Tiramisu</h3>
+      <p>Traditional Italian coffee-flavored dessert.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Chocolate Fondue</h3>
+      <p>Warm, melted chocolate served with fruit and marshmallows for dipping.</p>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
+    <p>&copy; 2023 Delicious Eats</p>
   </footer>
 </body>
+
 </html>
