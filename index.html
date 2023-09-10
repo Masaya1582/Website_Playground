@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
+  <title>Music Player</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>My Music Player</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
   <main>
-    <section>
-      <h2>About Us</h2>
-      <p>This is a simple website created using HTML and CSS.</p>
-    </section>
+    <div class="music-player">
+      <div class="playlist">
+        <h2>Playlist</h2>
+        <ul>
+          <li class="song">Song 1</li>
+          <li class="song">Song 2</li>
+          <li class="song">Song 3</li>
+          <!-- Add more songs here -->
+        </ul>
+      </div>
+      <div class="controls">
+        <h2>Player Controls</h2>
+        <audio controls>
+          <source src="sample_audio.mp4" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
-  </footer>
 </body>
+
 </html>

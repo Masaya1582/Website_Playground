@@ -1,47 +1,61 @@
-/* Reset default browser styles */
-body, h1, h2, p {
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    color: #777;
-  }
-  
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.music-player {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.playlist .song {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.playlist .song:hover {
+    background-color: #f2f2f2;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+audio {
+    width: 100%;
+}
