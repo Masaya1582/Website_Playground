@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
+  <title>Fancy Image Slider</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>This is a simple website created using HTML and CSS.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
-  </footer>
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide slide1">
+        <div class="slide-content">
+          <h2>Slide 1</h2>
+          <p>Welcome to our fancy slider!</p>
+        </div>
+      </div>
+      <div class="slide slide2">
+        <div class="slide-content">
+          <h2>Slide 2</h2>
+          <p>Explore our stunning designs.</p>
+        </div>
+      </div>
+      <div class="slide slide3">
+        <div class="slide-content">
+          <h2>Slide 3</h2>
+          <p>Don't miss our special offers!</p>
+        </div>
+      </div>
+    </div>
+    <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+    <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
