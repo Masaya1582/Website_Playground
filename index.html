@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Elements</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>This is a simple website created using HTML and CSS.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
-  </footer>
+    <h1>Advanced Form Elements</h1>
+    
+    <form>
+        <!-- File Upload -->
+        <label for="fileInput">Upload a File:</label>
+        <input type="file" id="fileInput" name="file" accept=".pdf, .doc, .docx">
+        <br><br>
+
+        <!-- Date Input -->
+        <label for="dateInput">Select a Date:</label>
+        <input type="date" id="dateInput" name="date">
+        <br><br>
+
+        <!-- Range Input -->
+        <label for="rangeInput">Choose a Value:</label>
+        <input type="range" id="rangeInput" name="range" min="0" max="100" value="50">
+        <br><br>
+
+        <!-- Custom Checkbox -->
+        <div class="custom-checkbox">
+            <input type="checkbox" id="customCheckbox" name="customCheck">
+            <label for="customCheckbox">Custom Checkbox</label>
+        </div>
+        <br>
+
+        <!-- Custom Radio Buttons -->
+        <div class="custom-radio">
+            <input type="radio" id="radioOption1" name="customRadio" value="option1">
+            <label for="radioOption1">Option 1</label>
+        </div>
+        <div class="custom-radio">
+            <input type="radio" id="radioOption2" name="customRadio" value="option2">
+            <label for="radioOption2">Option 2</label>
+        </div>
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
