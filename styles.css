@@ -1,47 +1,64 @@
-/* Reset default browser styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+header {
+  background-color: #333;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.horror-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #111;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5) inset;
+}
+
+.ghost {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url('img_barack.jpeg');
+  background-size: cover;
+  animation: float 5s ease-in-out infinite;
+}
+
+.text {
+  text-align: center;
+  z-index: 1;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
   }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  50% {
+      transform: translateY(-20px);
   }
-  
-  header, nav, main, footer {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+}
