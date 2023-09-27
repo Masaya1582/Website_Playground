@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Simple Website</title>
   <link rel="stylesheet" href="styles.css">
+  <title>Array Manipulation Demo</title>
 </head>
+
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Array Manipulation Demo</h1>
   </header>
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+  <section class="list-container">
+    <h2>Items List</h2>
+    <ul id="item-list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
     </ul>
-  </nav>
-  <main>
-    <section>
-      <h2>About Us</h2>
-      <p>This is a simple website created using HTML and CSS.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 My Simple Website. All rights reserved.</p>
-  </footer>
+    <div class="button-container">
+      <button id="push-button">Push Item</button>
+      <button id="pop-button">Pop Item</button>
+      <button id="shift-button">Shift Item</button>
+      <button id="unshift-button">Unshift Item</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
+
 </html>
