@@ -1,47 +1,62 @@
-/* Reset default browser styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Apply basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  header, nav, main, footer {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  header h1 {
-    color: #333;
-  }
-  
-  nav ul {
-    list-style: none;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  main h2 {
-    color: #333;
-  }
-  
-  footer {
-    text-align: center;
-    color: #777;
-  }
-  
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
